@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Welcome to #[span.heading The Board] #[button(type="button").post  &plus;]
+  main
+    each post in posts
+      article 
+        div.message= post.message
+        hr
+        div.author= post.author
+        div.added= '[ ' + post.added + ' ]'
