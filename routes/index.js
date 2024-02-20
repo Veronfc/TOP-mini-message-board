@@ -14,22 +14,7 @@ const FORMAT = new Intl.DateTimeFormat('en-GB', {
 
 const posts = [
   {
-    message: 'Hello World! this is gonna be a long ass message to test out how the overflow looks so lets just make this super super long and we need to go even longer with this shit so here goes, some more useless text',
-    author: 'Veronfc',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World! this is gonna be a long ass message to test out how the overflow looks so lets just make this super super long and we need to go even longer with this shit so here goes, some more useless text',
-    author: 'Veronfc',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World! this is gonna be a long ass message to test out how the overflow looks so lets just make this super super long and we need to go even longer with this shit so here goes, some more useless text',
-    author: 'Veronfc',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World! this is gonna be a long ass message to test out how the overflow looks so lets just make this super super long and we need to go even longer with this shit so here goes, some more useless text',
+    message: 'Hello World!',
     author: 'Veronfc',
     added: FORMAT.format(new Date())
   },
