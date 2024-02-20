@@ -14,53 +14,8 @@ const FORMAT = new Intl.DateTimeFormat('en-GB', {
 
 const posts = [
   {
-    message: 'Hi there!',
-    author: 'Veron',
-    added: FORMAT.format(new Date())
-  },
-  {
     message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
-    added: FORMAT.format(new Date())
-  },
-  {
-    message: 'Hello World!',
-    author: 'Fabian',
+    author: 'Veronfc',
     added: FORMAT.format(new Date())
   },
 ]

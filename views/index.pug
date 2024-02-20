@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1 Welcome to #[span.heading The Board] #[button(type="button").post  &plus;]
+  h1 Welcome to #[span.heading The Board] #[a(href='/new', title='Add new message').post  &plus;]
   main
     each post in posts
       article 

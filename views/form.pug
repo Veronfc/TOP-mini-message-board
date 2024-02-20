@@ -1,10 +1,12 @@
 extends layout
 
 block content
+  h1 Add a message
   form(action="/new", method="post")
-    h1 Add a new message
-     input(type="text", name="author")
-     |
-     input(type="text", name="message")
-     |
-     button(type="submit", tex="submit") 
+    label(for='author').name Name: #[input(type="text", name="author")]
+    section
+      label(for='message').message-label Message:
+      textarea(name='message', cols="30", rows="5")
+    section
+      a(href='/').back Back
+      button(type="submit") Post
