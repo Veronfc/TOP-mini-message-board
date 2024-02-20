@@ -7,5 +7,6 @@ block content
       article 
         div.message= post.message
         hr
-        div.author= post.author
-        div.added= '[ ' + post.added + ' ]'
+        div.info
+          div= post.author
+          div= '[ ' + post.added + ' ]'

@@ -3,10 +3,10 @@ extends layout
 block content
   h1 Add a message
   form(action="/new", method="post")
-    label(for='author').name Name: #[input(type="text", name="author")]
+    label(for='author').name Name: #[input(type="text", name="author", minlength='5', maxlength='30', required)]
     section
       label(for='message').message-label Message:
-      textarea(name='message', cols="30", rows="5")
+      textarea(name='message', cols="25", rows="5", required, minlength='5', maxlength='250')
     section
       a(href='/').back Back
       button(type="submit") Post
