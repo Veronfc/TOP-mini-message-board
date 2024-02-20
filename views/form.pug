@@ -6,7 +6,7 @@ block content
     label(for='author').name Name: #[input(type="text", name="author", minlength='5', maxlength='30', required)]
     section
       label(for='message').message-label Message:
-      textarea(name='message', cols="25", rows="5", required, minlength='5', maxlength='250')
+      textarea(name='message', cols="25", rows="5", required, minlength='2', maxlength='250')
     section
       a(href='/').back Back
       button(type="submit") Post
