@@ -1,13 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/josefin-sans'); 
 @import url('https://fonts.cdnfonts.com/css/major-birch');                
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   overflow: hidden;
   height: calc(100vh - 4rem);
   margin: 0;
   padding: 2rem;
   background-color: #176B87;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: light;
   color: white;
@@ -36,10 +40,14 @@ h1 {
   font-size: 3rem;
   font-weight: light;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 label {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .message-label {
@@ -48,12 +56,11 @@ label {
 
 input, textarea {
   outline: none;
-  height: 1.5rem;
   padding: .5rem 1rem;
   background-color: #053B50;
   border: 0;
   border-radius: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
 }
@@ -79,7 +86,7 @@ section {
   cursor: pointer;
   border: .1rem solid white;
   border-radius: 1rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   text-decoration: none;
@@ -92,7 +99,7 @@ button {
   cursor: pointer;
   border: .1rem solid white;
   border-radius: 1rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
 }
@@ -111,7 +118,7 @@ button {
   transition: .25s;
   cursor: pointer;
   border: 0;
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: 300;
   color: white;
   text-decoration: none;
@@ -122,7 +129,6 @@ button {
 }
 
 main {
-  scrollbar-gutter: stable both-edges;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -130,15 +136,15 @@ main {
   gap: 1.5rem;
   overflow-y: auto;
   height: calc(100vh - 13rem);
-  margin: 2rem 0;
+  margin: 3rem 0 2rem 0;
   padding: 0 2rem;
 }
 
 article {
   display: grid;
-  grid-template: 5.5rem .5rem 2rem / 25rem 15rem;
-  width: 40rem;
-  height: 8rem;
+  grid-template: 1fr 1rem 3rem / 30rem 20rem;
+  width: 50rem;
+  height: min-content;
   padding: 1rem;
   background-color: #053B50;
   border-radius: 1rem;
@@ -148,13 +154,13 @@ article {
   align-self: center;
   grid-area: 1/1/2/3;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 hr {
   align-self: center;
   grid-area: 2/1/3/3;
-  width: 38rem;
+  width: 48rem;
 }
 
 .author {
